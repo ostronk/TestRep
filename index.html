@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script>
+
+
+/*y = prompt("Перевірка на парність","Введіть число");
+massive[i] = (Math.floor(Math.random()*20));
+	document.write (massive[i]);*/
+//1
+/*let Array = [];
+let Size;
+let Array2 = [];
+let Size2 = 0;
+
+Size = prompt("Введіть розмір масиву", "");
+
+for(let i = 0; i < Size; i++)
+{
+  Array[i] = Math.floor(Math.random() * 10);
+}
+document.write("Вихідний масив" + "<br/>");
+document.write(Array + "<br/>");
+document.write("Сортований масив" + "<br/>");
+Array.sort(function(a, b){return a-b});
+document.write(Array + "<br/>");
+document.write("Результат видалення дублікатів" + "<br/>");
+
+
+for(let i = 0; i < Size; i++)
+{
+if (Array[i] != Array[i+1])
+{
+Array2[Size2] = Array[i];
+Size2++;
+}
+}
+
+document.write(Array2);*/
+
+//2
+/*let arr = [];
+let size;
+var min=23,minpes;
+size = prompt("Введіть розмір масиву","");
+for(var i=0;i<size;i++)
+{
+arr[i] = Math.floor(Math.random() * 10);
+}
+document.write("Вихідний масив" + "<br/>");
+document.write(arr + "<br/>");
+min = arr[0];
+for(var i=0;i<size;i++)
+{
+if(min>arr[i] && arr[i]%2==0)
+{
+	min=arr[i];
+	minpes=0;
+}
+
+if(i==size-1 && min==23)
+	minpes=1;
+}
+if(minpes==1)
+{
+	alert("Перший елемент = "+arr[0]);
+}
+else{
+alert("Мінімальне парне число = "+min);
+}
+*/
+
+//3
+/*let Arr=[];
+let size,action,pus,inx,elem;
+size = prompt("Введіть розмір масиву","");
+for(var i=0;i<size;i++)
+{
+	Arr[i]=Math.floor(Math.random()*20);
+}
+document.write("Вихідний масив: ");
+document.write(Arr + "<br/>");
+while(true){
+action = prompt("Що ви хочете зробити?  1) добавити елемент (початок)  2) добавити елемент(кінець)  3) видалити елемент(початок)  4) видалити елемент(кінець)  5) вийти з меню та показати масив  6) редагувати елемент за індексом","");
+if(action == 1)
+{
+pus=prompt("Введіть елемент, який ви хочете добавити на початок","");
+alert("Ви добавили такий елемент: "+Arr.unshift(pus));
+}
+else if(action==2)
+{
+pus=prompt("Введіть елемент, який ви хочете добавити","");
+alert("Ви добавили такий елемент: "+Arr.push(pus));
+}
+else if(action==3)
+{
+alert("Ви видалили елемент: "+Arr.shift());
+}
+else if(action==4)
+{
+alert("Ви видалили елемент: "+Arr.pop());
+}
+else if(action == 5)
+{
+break;
+}
+else if(action == 6)
+{
+inx = prompt("Введіть індекс елемента","");
+elem = prompt("Внесіть зміни","");
+Arr[inx]=elem;
+}
+}
+document.write("Результат:  ");
+document.write(Arr + "<br/>");*/
+
+
+//4
+/*let massive = [];
+var avg= 0, max = 0,min = 0,u;
+u = prompt("Введіть розмір массиву","");
+for(var i = 0;i<u;i++)
+{
+	massive[i] = (Math.floor(Math.random()*20));
+	avg+=massive[i];
+}
+
+document.write("Ваш масив: ");
+max = massive[0];
+min = massive[0];
+for(var i = 0;i<u;i++)
+{
+	if(max<massive[i]){
+		max = massive[i];
+	}
+	if(min>massive[i]){
+		min=massive[i];
+	}
+	document.write (massive[i]);
+	if(i==u-1)
+		break;
+	document.write(",");
+}*/
+
+var res=avg/u;
+
+alert("Середнє арифметичне = "+res);
+alert("Максимальне число = "+max);
+alert("Мінімальне число = "+min);
+
+//1
+
+
+
+</script
+
+</head>
+
+<body>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,214 @@
+
+body {
+    background: #f7f7f6;
+
+    }
+/*Main BLOCK*/
+    #Frame
+    {
+    background-color: white;
+    width: 80%;
+    height: 1300px;
+    }
+/*Alternative languages*/
+    #ru
+    {
+    float: right;
+    margin-top: 5px;
+    margin-right: 80px;
+    height: 20px;
+    width: 20px;
+    }
+
+    #ua
+    {
+float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+}
+/*Logotype*/
+#logo
+{
+    margin-left: 25px;
+    float:left;
+
+}
+
+#mainframe
+{
+position:absolute;
+margin-top: 50px;
+margin-left:4%;
+height:100%;
+width:75%;
+}
+#topline
+{
+  margin-top: 50px;
+border-bottom: 1px solid;
+margin: 0 auto;
+width:75%;
+height:30px;
+}
+
+#findmus
+{
+    margin:0 auto;
+}
+
+
+#regis
+{
+    float:right;
+    margin-right: 33%;
+    width: 20%
+    height:5%;
+    margin-top: 3%;
+
+}
+/*Block with genre of music*/
+#Genre
+{
+  position: absolute;
+  margin-left:73%;
+  margin-top: 30%;
+    background-color: #f8f8f9;
+    width: 20%;
+    height: 65%;
+}
+
+.genre_
+{
+border-bottom: 1px solid white;
+}
+/*Main block with music and photo*/
+#Abs
+{
+    position: absolute;
+    width: 55%;
+    height:100%;
+    background-color: #f8f8f9;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+#text
+{
+    width: 100%;
+    height: 6%;
+    font-family: Comic Sans MS, sans-serif;
+}
+#line
+{
+    margin:0 auto;
+    width: 80%;
+    margin-top: 3%;
+    border-top: 3px double;
+}
+/*Music*/
+.music
+{
+width: 100%;
+height: 12%;
+margin-top: 5%;
+}
+.photo
+{    
+    float: left;
+    height: 100%;
+    width:11%;
+}
+.namemusic
+{
+    width: 100%;
+    height: 40%;
+    font-family: Lucida Console, sans-serif;
+}
+.player
+{
+    width: 100%;
+    height: 60%;
+    
+}
+#p5
+{
+width: 557px;
+}
+#nextpage
+{
+    width: 200px;
+    height: 20px;
+    float: right;
+    margin-top: 3%;
+    margin-right: 25%;
+}
+
+
+/*Login*/
+#logi
+{
+    float:right;
+    width: 20%;
+    height: 32%;
+    background-color: #f8f8f9;
+    margin-right:80px;
+    margin-top: 5% 
+}
+
+#enter
+{
+    margin-top: 5%;
+    margin-left: 30%;
+    width: 40%;
+    height: 10%;
+    background-color: #f8f8f9;
+}
+#login
+{
+
+    margin-top: 1%;
+    margin-left: 10%;
+    width: 80%;
+    height: 60%;
+    background-color:  #f8f8f9;
+}
+
+#poster
+{
+    margin-top: 10%;
+    width: 60%;
+    height: 35%;
+}
+.blocksOfNews
+{
+    float: left;
+    margin-left: 3.3%;
+    width: 29%;
+    height: 100%;
+}
+.imgposter
+{
+    width: 100%;
+    height: 70%;
+}
+.textposter
+{
+    width: 100%;
+    height: 20%;
+}
+#nextbut
+{
+    margin-right: 5%;
+    margin-top: 15%;
+    width: 5%;
+    height: 7%;
+    float:right;
+}
+#footer
+{
+    margin: 0 auto;
+    width: 80%;
+    height: 7%;
+    background-color: #f7f7f6;
+}

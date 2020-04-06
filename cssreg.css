@@ -1,0 +1,46 @@
+body
+{
+	background-color: #f7f7f6;
+}
+
+#frame
+{
+	margin: 0 auto;
+	margin-top: 100px;
+	width: 40%;
+	height: 450px;
+	background-color: white;
+	border:2px solid;
+}
+#regs
+{
+	margin: 0 auto;
+	margin-top: 10%;
+	width: 30%;
+	height: 10%;
+	font-family: Comic Sans MS, sans-serif;
+}
+#line
+{
+	margin:0 auto;
+	width: 70%;
+	height: 10px;
+	border-top: 3px double;
+}
+#framereg
+{
+	margin:0 auto;
+	margin-top: 5%;
+	width: 55%;
+	height: 57%;
+	border:1px solid;
+	font-family: Comic Sans MS, sans-serif;
+}
+#back
+{
+	margin: 0 auto;
+	margin-top: 8%;
+	width: 50px;
+	height: 30px;
+
+}
