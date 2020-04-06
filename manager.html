@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <p>Level salary ($)<br/></p>
+        <p>For 1 manager<br/></p>
+        <input type="text" id="o">
+        <p>For 2 manager<br/></p>
+        <input type="text" id="d">
+        <p>For 3 manager<br/></p>
+        <input type="text" id="t"> <br/>
+        <input type="button" value="Calculate" onclick="Calc()">
+    </form>
+
+    <script>
+
+        
+
+
+        function Calc()
+        {
+            let od = o.value;
+            let dv = d.value;
+            let tr = t.value;
+
+            let ResOd;
+            let ResDv;
+            let ResTr;
+
+            let resOd;
+
+            ///////////////
+            if(od<500)
+            {
+                thre(od);
+            }
+            else if(od>499 && od<1000)
+            {
+                fiv(od);
+            }
+            else if(od>999)
+            {
+                eigh(od);
+            }
+            ////////////////
+            if(dv<500)
+            {
+                thre(dv);
+            }
+            else if(dv>499 && dv<1000)
+            {
+                fiv(dv);
+            }
+            else if(dv>999)
+            {
+                eigh(dv);
+            }
+            //////////////////
+            if(tr<500)
+            {
+                thre(tr);
+            }
+            else if(tr>499 && tr<1000)
+            {
+                fiv(tr);
+            }
+            else if(tr>999)
+            {
+                eigh(tr);
+            }
+            ///////////////////
+
+            document.write(valid(od,dv,tr));
+
+            ShowPayment();
+
+        }
+
+        function thre(x)
+        {
+            ResOd = parseFloat(x*0.03);  
+            ResOd = parseFloat(ResOd)+Number(x);
+            
+            ResDv = parseFloat(x*0.03);  
+            ResDv = parseFloat(ResDv)+Number(x);
+
+            ResTr = parseFloat(x*0.03);  
+            ResTr = parseFloat(ResTr)+Number(x);
+
+        }
+
+        function fiv(x) 
+        {
+            ResOd = parseFloat(x*0.05);  
+            ResOd = parseFloat(ResOd)+Number(x);
+            
+            ResDv = parseFloat(x*0.03);  
+            ResDv = parseFloat(ResDv)+Number(x);
+
+            ResTr = parseFloat(x*0.03);  
+            ResTr = parseFloat(ResTr)+Number(x);
+        }
+
+        function eigh(x)
+        {
+            ResOd = parseFloat(x*0.08);  
+            ResOd = parseFloat(ResOd)+Number(x);
+            
+            ResDv = parseFloat(x*0.03);  
+            ResDv = parseFloat(ResDv)+Number(x);
+
+            ResTr = parseFloat(x*0.03);  
+            ResTr = parseFloat(ResTr)+Number(x);
+        }
+
+
+        function valid(x,y,z)
+        {
+            let str;
+            if(x>y && x>z)
+            {
+                ResOd+=200;
+                str = "The best worker - 1 (+200$)";
+            }
+            else if(y>x && y>z)
+            {
+                ResDv+=200;
+                str = "The best worker - 2 (+200$)";
+            }
+            else if(z>x && z>y)
+            {
+                ResTr+=200;
+                str = "The best worker - 3 (+200$)";
+            }
+            return str;
+        }
+
+        function ShowPayment()
+        {
+            var ShowOd = document.createElement("p");
+            var TextOd = document.createTextNode("Payment 1 manager = "+ResOd+"$");
+            var ShowDv = document.createElement("p");
+            var TextDv = document.createTextNode("Payment 2 manager = "+ResDv+"$");
+            var ShowTr = document.createElement("p");
+            var TextTr = document.createTextNode("Payment 3 manager = "+ResTr+"$");
+            console.log("SUCCES");
+            ShowOd.appendChild(TextOd);
+            ShowDv.appendChild(TextDv);
+            ShowTr.appendChild(TextTr);
+
+            document.body.appendChild(ShowOd);
+            document.body.appendChild(ShowDv);
+            document.body.appendChild(ShowTr);
+        }
+
+
+
+    </script>
+
+</body>
+</html>
